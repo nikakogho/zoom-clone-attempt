@@ -11,7 +11,7 @@ video.muted = true // mute me for myself
 video.id = 'Me'
 
 navigator.mediaDevices.getUserMedia({
-    video: false,
+    video: true,
     audio: true
 }).then(stream => {
     addVideoStream(video, stream)
